@@ -23,6 +23,6 @@ public class Fit {
 
         height = 165;
         double woman = Fit.womanWeight(height);
-        System.out.println("Woman 165 is " + woman);
+        System.out.print("Woman 165 is " + woman);
     }
 }
