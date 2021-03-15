@@ -9,6 +9,7 @@ public class ThreeMax {
         if (second >= first && second >= third) {
             result = second;
         }
+        System.out.println();
         return result;
     }
 }
