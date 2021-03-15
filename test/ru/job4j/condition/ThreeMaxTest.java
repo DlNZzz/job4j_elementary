@@ -6,7 +6,6 @@ import org.junit.Test;
 public class ThreeMaxTest {
     @Test
     public void firstMax() {
-        System.out.println();
         int first = 10;
         int second = 5;
         int third = 1;
