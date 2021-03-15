@@ -21,5 +21,4 @@ public class Fit {
         height = 167;
         System.out.println("Woman 167 is " + Fit.womanWeight(height));
     }
-
 }
