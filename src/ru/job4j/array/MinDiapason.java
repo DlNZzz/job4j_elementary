@@ -5,7 +5,7 @@ public class MinDiapason {
         int min = array[start];
         /*        for (int i = ...; i < ...; i++) { */
         /*        } */
-        for (int i = start; i <= finish; i++) {
+        for (int i = ++start; i <= finish; i++) {
             min = array[i] < min ? array[i] : min;
         }
         return min;
