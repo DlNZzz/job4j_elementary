@@ -12,14 +12,18 @@ public class ArrayDefinition {
         System.out.println(ages.length);
         System.out.println(surnames.length);
         System.out.println(prices.length);
+        String[] names = getNames();
+        for (int i = 0; i < names.length; i++) {
+            System.out.println(names[i]);
+        }
+    }
 
+    public static String[] getNames() {
         String[] names = new String[4];
         names[0] = "Andrei Hincu";
         names[1] = "Rail Shamsemuhametov";
         names[2] = "Korobeinikov Stas";
         names[3] = "Petr Bogomolov";
-        for (int i = 0; i < names.length; i++) {
-            System.out.println(names[i]);
-        }
+        return names;
     }
 }

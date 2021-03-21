@@ -3,20 +3,18 @@ package ru.job4j.array;
 public class AlgoArray {
     public static void main(String[] args) {
         int[] array = new int[] {5, 3, 2, 1, 4};
-        int temp = array[0]; /* переменная для временного хранения значение ячейки с индексом 0. */
-        array[0] = array[3]; /* записываем в ячейку с индексом 0 значение ячейки с индексом 3. */
-        array[3] = temp; /* записываем в ячейку с индексом 3 значение временной переменной. */
-
-        temp = array[4];
-        array[4] = array[3];
-        array[3] = temp;
-
-        temp = array[1];
-        array[1] = array[2];
-        array[2] = temp;
-
+        arraySwap(array, 0, 3);
+        arraySwap(array, 4, 3);
+        arraySwap(array, 1, 2);
         for (int index = 0; index < array.length; index++) {
             System.out.println(array[index]);
         }
+    }
+
+    public static int[] arraySwap(int[] array, int one, int two) {
+        int temp = array[two];
+        array[two] = array[one];
+        array[one] = temp;
+        return array;
     }
 }
