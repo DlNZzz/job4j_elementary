@@ -30,4 +30,25 @@ public class MaxTest {
         int expected = 2;
         Assert.assertEquals(expected, rsl);
     }
+
+    @Test
+    public void whenMax3() {
+        int left = 2;
+        int right = 2;
+        int three = 23;
+        int rsl = Max.max(left, right, three);
+        int expected = 23;
+        Assert.assertEquals(expected, rsl);
+    }
+
+    @Test
+    public void whenMax4() {
+        int left = -3;
+        int right = 0;
+        int three = 23;
+        int four = 22222;
+        int rsl = Max.max(left, right, three, four);
+        int expected = 22222;
+        Assert.assertEquals(expected, rsl);
+    }
 }
